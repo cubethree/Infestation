@@ -25,19 +25,7 @@ namespace Infestation.VirtualParadise.Entities
 
         public object Clone()
         {
-            return new Player
-            {
-                Id = this.Id,
-                Points = this.Points,
-                PointsPerMove = this.PointsPerMove,
-                TotalPoints = this.TotalPoints,
-
-                Online = this.Online,
-                Color = this.Color,
-                WebOverlayId = this.WebOverlayId,
-
-                VpAvatar = this.VpAvatar.Copy()
-            };
+            return this.Copy();
         }
     }
 }
