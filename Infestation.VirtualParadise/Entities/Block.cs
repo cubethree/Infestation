@@ -37,18 +37,7 @@ namespace Infestation.VirtualParadise.Entities
  
         public object Clone()
         {
-            return new Block
-            {
-                Id = this.Id,
-                PlayerId = this.PlayerId,
-                Points = this.Points,
-                Selected = this.Selected,
-                X = this.X,
-                Y = this.Y,
-                Z = this.Z,
-
-                VpObject = this.VpObject.Copy()
-            };
+            return this.Copy();
         }
     }
 }
